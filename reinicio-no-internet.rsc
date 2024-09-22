@@ -9,7 +9,7 @@ add disabled=no down-script=":if ([/system resource get uptime]>30) do={\r\
     up-script=""
 
 /system script
-add dont-require-permissions=no name=AutomaticRestart owner=Rivera policy=\
+add dont-require-permissions=no name=AutomaticRestart policy=\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source=":\
     local PingCount 300;\r\
     \n:local stop false;\r\
