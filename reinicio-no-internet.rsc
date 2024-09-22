@@ -1,3 +1,6 @@
+Checa si hay internet en un lapso de 5 minutos, si no hay, realiza un reinicio del mikrotik, se compone de Netwatch y el script.
+
+
 /tool netwatch
 add disabled=no down-script=":if ([/system resource get uptime]>30) do={\r\
     \n  :log info \"Not ping on 8.8.8.8\";\r\
